@@ -6,17 +6,17 @@ Bumetanide,Bumex,Loop Diuretic,,"HF, volume overload","decrease K+, decrease Na+
 Torsemide,Demadex,Loop Diuretic,,"HF, volume overload","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
 Ethacrynic acid,Edecrin,Loop Diuretic,,"HF, volume overload","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
 Hydrochlorothiazide,HCTZ,Thiazide Diuretic,,"HTN (combo), HF adjunct, osteoporosis benefit","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
-Chlorthalidone,,Thiazide Diuretic,,"HTN, HF adjunct","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
+Chlorthalidone,Chlorthalidone,Thiazide Diuretic,,"HTN, HF adjunct","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
 Indapamide,Lozol,Thiazide Diuretic,,HTN,"decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
 Metolazone,Zaroxolyn,Thiazide Diuretic,,Resistant edema (HF adjunct),"decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
 Spironolactone,Aldactone,Aldosterone antagonist (K+ sparing Diuretic),,"HF, HTN, CKD/diabetes, aldosteronism","increase K+, decrease Na+, gynecomastia",**Non-selective vs eplerenone**
 Eplerenone,Inspra,Aldosterone antagonist (K+ sparing Diuretic),,"HF, HTN","increase K+, decrease Na+",
 Finerenone,Kerendia,Aldosterone antagonist (K+ sparing Diuretic),,"CKD, diabetes","increase K+, decrease Na+",
-Amiloride,,Na+ channel blocker (K+ sparing),,HTN (with thiazide),"increase K+, decrease Na+",
-Triamterene,,Na+ channel blocker (K+ sparing),,HTN (with thiazide),"increase K+, decrease Na+",
+Amiloride,Amiloride,Na+ channel blocker (K+ sparing),,HTN (with thiazide),"increase K+, decrease Na+",
+Triamterene,Triamterene,Na+ channel blocker (K+ sparing),,HTN (with thiazide),"increase K+, decrease Na+",
 Acetazolamide,Diamox,Carbonic anhydrase inhibitor,,"Glaucoma, altitude sickness, alkalosis","decrease Na+, decrease HCO3-, dehydration, increase  uric acid (gout)",
 Dorzolamide,Trusopt,Carbonic anhydrase inhibitor,,Glaucoma,"decrease Na+, decrease HCO3-, dehydration",
-Mannitol,,Osmotic diuretic,,"ICP, glaucoma, hyponatremia","Hypervolemia, dehydration, electrolyte imbalance, CNS effects",
+Mannitol,Mannitol,Osmotic diuretic,,"ICP, glaucoma, hyponatremia","Hypervolemia, dehydration, electrolyte imbalance, CNS effects",
 Urea,Ure-Na,Osmotic diuretic,,"ICP, glaucoma, hyponatremia","Hypervolemia, dehydration, electrolyte imbalance, CNS effects",
 Conivaptan,Vaprisol,Vasopressin antagonist,,"Hyponatremia, HF*","increase Na+, dehydration, hypotension",
 Tolvaptan,Samsca,Vasopressin antagonist,,"Hyponatremia, HF*","increase Na+, dehydration, hypotension",**Hepatotoxicity risk**
@@ -51,7 +51,7 @@ Atenolol,Tenormin,beta 1-selective beta blocker,,"MI, angina, HTN","decrease HR,
 Bisoprolol,Zebeta,beta 1-selective beta blocker,,"HF, HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
 Esmolol,Brevibloc,beta 1-selective beta blocker,,"Acute MI, periop HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction","**IV, ultra–short acting**"
 Propranolol,Inderal,Non-selective beta blocker,,"MI, angina, HTN, off-label","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction","**Used for migraine, tremor, anxiety**"
-Timolol,,Non-selective beta blocker,,"HTN, ocular HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
+Timolol,Timolol,Non-selective beta blocker,,"HTN, ocular HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
 Nadolol,Corgard,Non-selective beta blocker,,"HTN, angina","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
 Labetalol,"Trandate, Normodyne",beta + alpha 1 blocker,,"HTN (emergency, pregnancy)","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",**IV use in hypertensive crisis**
 Carvedilol,"Coreg, Coreg CR",beta + alpha 1 blocker,,"HF, HTN, CAD","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",**Mortality benefit in HFrEF**
@@ -69,7 +69,7 @@ Methyldopa,Aldomet,Central alpha 2 agonist,,HTN (pregnancy),"Sedation, dry mouth
 Amlodipine,Norvasc,CCB (DHP),,"HTN, angina","Edema, constipation, reflex tachycardia, dizziness",
 Felodipine,Plendil,CCB (DHP),,"HTN, angina","Edema, constipation, reflex tachycardia, dizziness",
 Nifedipine,"Procardia, Adalat",CCB (DHP),,"HTN, angina","Edema, constipation, reflex tachycardia, dizziness",**Avoid IR in HTN**
-Isradipine,,CCB (DHP),,HTN,"Edema, constipation, reflex tachycardia, dizziness",
+Isradipine,Isradipine,CCB (DHP),,HTN,"Edema, constipation, reflex tachycardia, dizziness",
 Nicardipine,Cardene,CCB (DHP),,"HTN, angina","Edema, constipation, reflex tachycardia, dizziness",**IV for crisis**
 Nimodipine,Nimotop,CCB (DHP),,Subarachnoid hemorrhage,"Edema, constipation, reflex tachycardia, dizziness",**Cerebral use**
 Clevidipine,Cleviprex,CCB (DHP),,HTN,"Edema, constipation, reflex tachycardia, dizziness",**IV for crisis**
@@ -77,8 +77,8 @@ Diltiazem,"Cardizem, Cartia, Tiazac",CCB (non-DHP),,"HTN, Afib rate control","de
 Verapamil,"Calan, Verelan",CCB (non-DHP),,"HTN, Afib rate control","decrease HR, heart block, hypotension, constipation",Avoid in HFrEF
 
 # Direct Vasodilators
-Hydralazine,,Direct vasodilator,,"HTN (adjunct), HF (with nitrate)","increase HR, lupus-like syndrome",
-Minoxidil,,Direct vasodilator,,Resistant HTN,"increase HR, hypertrichosis",**Reserve for severe HTN**
+Hydralazine,Hydralazine,Direct vasodilator,,"HTN (adjunct), HF (with nitrate)","increase HR, lupus-like syndrome",
+Minoxidil,Rogaine (Hair),Direct vasodilator,,Resistant HTN,"increase HR, hypertrichosis",**Reserve for severe HTN**
 
 # Nitric Oxide Pathway Modulators
 Isosorbide mononitrate,"Imdur (ER), Ismo, Monoket (IR)",Nitrate,Oral ER/IR,"Angina, MI","Headache, dizziness, hypotension, tolerance",**Need nitrate-free interval**
