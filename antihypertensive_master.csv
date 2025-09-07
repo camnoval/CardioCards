@@ -1,0 +1,95 @@
+Generic Name,Brand Name(s),Drug Class,Dosage Forms,Indication,Side Effects,Clinical Pearls
+
+# Diuretics and Diuretic-Like Compounds (Loop / Thiazide / K+ sparing / Carbonic anhydrase inhibitor / Osmotic / Vasopressin antagonist / SGLT2 inhibitor)
+Furosemide,Lasix,Loop Diuretic,,"HF, volume overload","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
+Bumetanide,Bumex,Loop Diuretic,,"HF, volume overload","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
+Torsemide,Demadex,Loop Diuretic,,"HF, volume overload","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
+Ethacrynic acid,Edecrin,Loop Diuretic,,"HF, volume overload","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
+Hydrochlorothiazide,HCTZ,Thiazide Diuretic,,"HTN (combo), HF adjunct, osteoporosis benefit","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
+Chlorthalidone,,Thiazide Diuretic,,"HTN, HF adjunct","decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
+Indapamide,Lozol,Thiazide Diuretic,,HTN,"decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
+Metolazone,Zaroxolyn,Thiazide Diuretic,,Resistant edema (HF adjunct),"decrease K+, decrease Na+, dehydration, hypotension, increase  uric acid (gout)",
+Spironolactone,Aldactone,Aldosterone antagonist (K+ sparing Diuretic),,"HF, HTN, CKD/diabetes, aldosteronism","increase K+, decrease Na+, gynecomastia",**Non-selective vs eplerenone**
+Eplerenone,Inspra,Aldosterone antagonist (K+ sparing Diuretic),,"HF, HTN","increase K+, decrease Na+",
+Finerenone,Kerendia,Aldosterone antagonist (K+ sparing Diuretic),,"CKD, diabetes","increase K+, decrease Na+",
+Amiloride,,Na+ channel blocker (K+ sparing),,HTN (with thiazide),"increase K+, decrease Na+",
+Triamterene,,Na+ channel blocker (K+ sparing),,HTN (with thiazide),"increase K+, decrease Na+",
+Acetazolamide,Diamox,Carbonic anhydrase inhibitor,,"Glaucoma, altitude sickness, alkalosis","decrease Na+, decrease HCO3-, dehydration, increase  uric acid (gout)",
+Dorzolamide,Trusopt,Carbonic anhydrase inhibitor,,Glaucoma,"decrease Na+, decrease HCO3-, dehydration",
+Mannitol,,Osmotic diuretic,,"ICP, glaucoma, hyponatremia","Hypervolemia, dehydration, electrolyte imbalance, CNS effects",
+Urea,Ure-Na,Osmotic diuretic,,"ICP, glaucoma, hyponatremia","Hypervolemia, dehydration, electrolyte imbalance, CNS effects",
+Conivaptan,Vaprisol,Vasopressin antagonist,,"Hyponatremia, HF*","increase Na+, dehydration, hypotension",
+Tolvaptan,Samsca,Vasopressin antagonist,,"Hyponatremia, HF*","increase Na+, dehydration, hypotension",**Hepatotoxicity risk**
+Dapagliflozin,Farxiga,SGLT2 inhibitor,,"HF, DM, CKD","UTI, genital yeast infection, dehydration, hypoglycemia, rare DKA",
+Empagliflozin,Jardiance,SGLT2 inhibitor,,"HF, DM, CKD","UTI, genital yeast infection, dehydration, hypoglycemia, rare DKA",
+Sotagliflozin,Inpefa,SGLT2 inhibitor,,"HF, DM","UTI, genital yeast infection, dehydration, hypoglycemia, rare DKA",**Dual SGLT1/2 inhibition**
+
+# RAAS Inhibitors (ACEi / ARB / ARNi / Direct renin inhibitor)
+Captopril,Capoten,ACE inhibitor,,"HTN, HF, MI, CKD","increase K+, increase SCr, cough, hypotension, angioedema (rare)",
+Benazepril,Lotensin,ACE inhibitor,,"HTN, HF, MI, CKD","increase K+, increase SCr, cough, hypotension, angioedema (rare)",
+Enalapril,Vasotec,ACE inhibitor,,"HTN, HF, MI, CKD","increase K+, increase SCr, cough, hypotension, angioedema (rare)",**IV form (enalaprilat)**
+Fosinopril,Monopril,ACE inhibitor,,"HTN, HF, MI, CKD","increase K+, increase SCr, cough, hypotension, angioedema (rare)",
+Lisinopril,"Prinivil, Zestril",ACE inhibitor,,"HTN, HF, MI, CKD","increase K+, increase SCr, cough, hypotension, angioedema (rare)",
+Moexipril,Univasc,ACE inhibitor,,"HTN, HF, MI, CKD","increase K+, increase SCr, cough, hypotension, angioedema (rare)",
+Quinapril,Accupril,ACE inhibitor,,"HTN, HF, MI, CKD","increase K+, increase SCr, cough, hypotension, angioedema (rare)",
+Ramipril,Altace,ACE inhibitor,,"HTN, HF, MI, CKD","increase K+, increase SCr, cough, hypotension, angioedema (rare)",
+Losartan,Cozaar,ARB,,"HTN, HF, MI, CKD","increase K+, increase SCr, hypotension",
+Candesartan,Atacand,ARB,,"HTN, HF, MI, CKD","increase K+, increase SCr, hypotension",
+Eprosartan,Teveten,ARB,,"HTN, HF, MI, CKD","increase K+, increase SCr, hypotension",
+Irbesartan,Avapro,ARB,,"HTN, HF, MI, CKD","increase K+, increase SCr, hypotension",
+Telmisartan,Micardis,ARB,,"HTN, HF, MI, CKD","increase K+, increase SCr, hypotension",
+Valsartan,Diovan,ARB,,"HTN, HF, MI, CKD","increase K+, increase SCr, hypotension",
+Olmesartan,Benicar,ARB,,"HTN, HF, MI, CKD","increase K+, increase SCr, hypotension",
+Azilsartan,Edarbi,ARB,,"HTN, HF, MI, CKD","increase K+, increase SCr, hypotension",
+Sacubitril/Valsartan,Entresto,ARNi,,HF,"increase K+, increase SCr, cough, hypotension, angioedema (rare)",**36h washout after ACEi**
+Aliskiren,Tekturna,Direct renin inhibitor,,HTN,"increase K+, increase SCr, hypotension",
+
+# Beta Blockers (Selective / Non-selective / Mixed / ISA)
+Metoprolol tartrate,Lopressor,beta 1-selective beta blocker,,"MI, angina, HF, HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
+Metoprolol succinate,Toprol XL,beta 1-selective beta blocker,,"MI, angina, HF, HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
+Atenolol,Tenormin,beta 1-selective beta blocker,,"MI, angina, HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
+Bisoprolol,Zebeta,beta 1-selective beta blocker,,"HF, HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
+Esmolol,Brevibloc,beta 1-selective beta blocker,,"Acute MI, periop HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction","**IV, ultra–short acting**"
+Propranolol,Inderal,Non-selective beta blocker,,"MI, angina, HTN, off-label","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction","**Used for migraine, tremor, anxiety**"
+Timolol,,Non-selective beta blocker,,"HTN, ocular HTN","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
+Nadolol,Corgard,Non-selective beta blocker,,"HTN, angina","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",
+Labetalol,"Trandate, Normodyne",beta + alpha 1 blocker,,"HTN (emergency, pregnancy)","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",**IV use in hypertensive crisis**
+Carvedilol,"Coreg, Coreg CR",beta + alpha 1 blocker,,"HF, HTN, CAD","decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",**Mortality benefit in HFrEF**
+Nebivolol,Bystolic,beta 1 + NO-mediated blocker,,HTN,"decrease HR, heart block, fatigue, dizziness, bronchospasm, sedation, depression, sexual dysfunction",**Promotes vasodilation via NO**
+
+# Alpha Blockers / Central Alpha Agonists 
+Prazosin,Minipress,alpha 1 blocker,,"HTN (adjunct), BPH","First-dose hypotension, dizziness",**Bedtime dosing**
+Terazosin,Hytrin,alpha 1 blocker,,"HTN (adjunct), BPH","First-dose hypotension, dizziness",
+Doxazosin,Cardura,alpha 1 blocker,,"HTN (adjunct), BPH","First-dose hypotension, dizziness",
+Phentolamine,Regitine,alpha 1 blocker,,"Extravasation, pheochromocytoma","First-dose hypotension, dizziness",
+Clonidine,Catapres,Central alpha 2 agonist,"Oral, patch","HTN (refractory), off-label","Sedation, dry mouth, rebound HTN",**Patch available**
+Methyldopa,Aldomet,Central alpha 2 agonist,,HTN (pregnancy),"Sedation, dry mouth, increase prolactin",**Pregnancy safe**
+
+# Calcium Channel Blockers (DHP / non-DHP)
+Amlodipine,Norvasc,CCB (DHP),,"HTN, angina","Edema, constipation, reflex tachycardia, dizziness",
+Felodipine,Plendil,CCB (DHP),,"HTN, angina","Edema, constipation, reflex tachycardia, dizziness",
+Nifedipine,"Procardia, Adalat",CCB (DHP),,"HTN, angina","Edema, constipation, reflex tachycardia, dizziness",**Avoid IR in HTN**
+Isradipine,,CCB (DHP),,HTN,"Edema, constipation, reflex tachycardia, dizziness",
+Nicardipine,Cardene,CCB (DHP),,"HTN, angina","Edema, constipation, reflex tachycardia, dizziness",**IV for crisis**
+Nimodipine,Nimotop,CCB (DHP),,Subarachnoid hemorrhage,"Edema, constipation, reflex tachycardia, dizziness",**Cerebral use**
+Clevidipine,Cleviprex,CCB (DHP),,HTN,"Edema, constipation, reflex tachycardia, dizziness",**IV for crisis**
+Diltiazem,"Cardizem, Cartia, Tiazac",CCB (non-DHP),,"HTN, Afib rate control","decrease HR, heart block, hypotension, dizziness",Avoid in HFrEF
+Verapamil,"Calan, Verelan",CCB (non-DHP),,"HTN, Afib rate control","decrease HR, heart block, hypotension, constipation",Avoid in HFrEF
+
+# Direct Vasodilators
+Hydralazine,,Direct vasodilator,,"HTN (adjunct), HF (with nitrate)","increase HR, lupus-like syndrome",
+Minoxidil,,Direct vasodilator,,Resistant HTN,"increase HR, hypertrichosis",**Reserve for severe HTN**
+
+# Nitric Oxide Pathway Modulators
+Isosorbide mononitrate,"Imdur (ER), Ismo, Monoket (IR)",Nitrate,Oral ER/IR,"Angina, MI","Headache, dizziness, hypotension, tolerance",**Need nitrate-free interval**
+Isosorbide dinitrate,Isordil,Nitrate,Oral,"Angina, HF (with hydralazine)","Headache, dizziness, hypotension, tolerance",
+Nitroglycerin,"Nitro-Dur, SL, spray, IV",Nitrate,"TD, SL, IV","Angina, MI","Headache, dizziness, hypotension, tolerance",**Avoid with PDE5 inhibitors**
+Sodium nitroprusside,Nipride,Nitrovasodilator,IV,Hypertensive emergency,"Hypotension, cyanide toxicity",**Light sensitive**
+Sildenafil,"Revatio, Viagra",PDE5 inhibitor,,"PAH, ED","Headache, hypotension, vision changes, myalgias",**Avoid with nitrates**
+Tadalafil,"Cialis, Adcirca",PDE5 inhibitor,,"PAH, ED","Headache, myalgias, hypotension",**Long half-life**
+Riociguat,Adempas,sGC stimulator,,PAH,"Dyspepsia, anemia, hypotension",**No PDE5 combo**
+Vericiguat,Verquvo,sGC stimulator,,HF,"Dyspepsia, anemia, hypotension",
+Aprocitentan,Tryvio,Endothelin receptor antagonist,,Hypertension,"Edema, anemia, hepatotoxicity, teratogenicity",**Newest ERA**
+Ambrisentan,Letairis,Endothelin receptor antagonist,,Pulmonary arterial HTN,"Edema, anemia, hepatotoxicity, teratogenicity",
+Bosentan,Tracleer,Endothelin receptor antagonist,,Pulmonary arterial HTN,"Edema, anemia, hepatotoxicity, teratogenicity",**Dual ETA/ETB**
+Macitentan,Opsumit,Endothelin receptor antagonist,,Pulmonary arterial HTN,"Edema, anemia, hepatotoxicity, teratogenicity",**Long-acting**

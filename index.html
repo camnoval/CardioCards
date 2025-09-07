@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Study Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7804559500348841"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Drug Study Platform</h1>
+            <p>Master pharmaceutical knowledge with interactive learning tools</p>
+        </div>
+
+        <!-- Loading Screen -->
+    <div id="loading-screen" class="screen active">
+        <div class="loading">
+            <div class="spinner"></div>
+            <h2>Loading Study Platform...</h2>
+            <p>Upload a CSV file to get started, or we'll try to load a default file.</p>
+            
+            <div style="margin: 30px 0;">
+                <input type="file" id="csv-file-input" accept=".csv" style="display: none;" onchange="handleFileUpload(event)">
+                <button class="btn btn-primary" onclick="document.getElementById('csv-file-input').click()">
+                    Upload CSV File
+                </button>
+            </div>
+            
+            <p style="font-size: 0.9rem; color: #666; margin-top: 20px;">
+                CSV should have sections marked with # and data rows without #<br>
+                Example: # SECTION NAME followed by data rows
+            </p>
+        </div>
+    </div>
+
+        <!-- Main Menu Screen -->
+        <div id="main-menu" class="screen">
+            <div class="progress-overview">
+                <h2>📊 Your Progress</h2>
+                <div class="progress-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" id="total-questions">0</span>
+                        <span class="stat-label">Questions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="total-correct">0</span>
+                        <span class="stat-label">Correct</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="total-accuracy">0%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="total-sessions">0</span>
+                        <span class="stat-label">Sessions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-grid">
+                <button class="menu-button" onclick="showScreen('matching-setup')">
+                    <h3>🎯 Matching Game</h3>
+                    <p>Match drug names with information to test your knowledge</p>
+                </button>
+                <button class="menu-button" onclick="showScreen('qa-setup')">
+                    <h3>❓ Q&A Practice</h3>
+                    <p>Answer questions about drugs and track your progress</p>
+                </button>
+                <button class="menu-button" onclick="showScreen('flashcards')">
+                    <h3>📚 Learn Mode</h3>
+                    <p>Study drug information with interactive flashcards</p>
+                </button>
+                <button class="menu-button" onclick="showScreen('drug-selection')">
+                    <h3>⚙️ Drug Selection</h3>
+                    <p>Choose which drugs and sections to study</p>
+                </button>
+                <button class="menu-button" onclick="showScreen('progress-tracker')">
+                    <h3>📈 Progress Tracker</h3>
+                    <p>View detailed statistics and study history</p>
+                </button>
+            </div>
+        </div>
+
+        <!-- Matching Game Setup -->
+        <div id="matching-setup" class="screen">
+            <h2 class="section-title">🎯 Matching Game Setup</h2>
+            
+            <div style="background: #f7fafc; padding: 25px; border-radius: 12px; margin: 20px 0;">
+                <h3 style="margin-bottom: 20px;">Select Categories to Match</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <label style="font-weight: bold; display: block; margin-bottom: 8px;">Category 1:</label>
+                        <select id="match-category1" style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px;">
+                            <option value="">Select a category...</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="font-weight: bold; display: block; margin-bottom: 8px;">Category 2:</label>
+                        <select id="match-category2" style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px;">
+                            <option value="">Select a category...</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-secondary" onclick="showScreen('main-menu')">← Back to Menu</button>
+                <button class="btn btn-primary" onclick="startMatchingGame()">🚀 Start Matching Game</button>
+            </div>
+        </div>
+
+        <!-- Matching Game -->
+        <div id="matching-game" class="screen">
+            <div class="controls">
+                <button class="btn btn-secondary" onclick="showScreen('matching-setup')">← Back to Setup</button>
+                <div>
+                    <span id="match-status">Matches: 0 | Attempts: 0</span>
+                </div>
+            </div>
+
+            <div class="game-board">
+                <div class="card-column">
+                    <h3 style="text-align: center; margin-bottom: 15px;" id="column1-title">Category 1</h3>
+                    <div id="column1-cards"></div>
+                </div>
+                <div class="card-column">
+                    <h3 style="text-align: center; margin-bottom: 15px;" id="column2-title">Category 2</h3>
+                    <div id="column2-cards"></div>
+                </div>
+            </div>
+
+            <div id="match-completion" class="completion-message" style="display: none;">
+                <h2>🎉 Congratulations!</h2>
+                <p>You matched all pairs!</p>
+                <p id="match-final-score"></p>
+                <button class="btn btn-primary" onclick="startMatchingGame()">Play Again</button>
+            </div>
+        </div>
+
+        <!-- Q&A Setup -->
+        <div id="qa-setup" class="screen">
+            <h2 class="section-title">❓ Q&A Practice Setup</h2>
+            
+            <div style="background: #f7fafc; padding: 25px; border-radius: 12px; margin: 20px 0;">
+                <p style="font-size: 1.1rem; color: #4a5568;">Ready to test your knowledge? We'll generate questions from your selected drugs covering generic names, brand names, drug classes, indications, and side effects.</p>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-secondary" onclick="showScreen('main-menu')">← Back to Menu</button>
+                <button class="btn btn-primary" onclick="startQAPractice()">🚀 Start Q&A Practice</button>
+            </div>
+        </div>
+
+        <!-- Q&A Practice -->
+        <div id="qa-practice" class="screen">
+            <div class="controls">
+                <span id="qa-progress">Question 1 of 10 | Score: 0/0</span>
+                <button class="btn btn-danger" onclick="endQASession()">🏁 End Session</button>
+            </div>
+
+            <div class="question-card">
+                <div class="question-text" id="qa-question">Loading question...</div>
+                <input type="text" class="answer-input" id="qa-answer" placeholder="Type your answer here..." onkeydown="if(event.key === 'Enter') checkQAAnswer()">
+                <div style="margin-top: 20px;">
+                    <button class="btn btn-primary" onclick="checkQAAnswer()">✓ Submit Answer</button>
+                    <button class="btn btn-secondary" onclick="showQAAnswer()">👁️ Show Answer</button>
+                    <button class="btn btn-secondary" onclick="skipQAQuestion()">⏭️ Skip</button>
+                </div>
+                <p style="color: #718096; margin-top: 15px;">💡 Press Enter to submit your answer</p>
+            </div>
+        </div>
+
+        <!-- Flashcards -->
+        <div id="flashcards" class="screen">
+            <div class="controls">
+                <button class="btn btn-secondary" onclick="showScreen('main-menu')">← Back to Menu</button>
+                <span id="flashcard-progress">Card 1 of 10</span>
+                <div>
+                    <button class="btn btn-secondary" onclick="previousFlashcard()">← Previous</button>
+                    <button class="btn btn-secondary" onclick="shuffleFlashcards()">🔀 Shuffle</button>
+                    <button class="btn btn-primary" onclick="nextFlashcard()">Next →</button>
+                </div>
+            </div>
+
+            <div class="flashcard">
+                <div class="flashcard-header">
+                    <h2 id="flashcard-drug-name">Drug Name</h2>
+                </div>
+                <div class="flashcard-content" id="flashcard-content">
+                    <p>Loading drug information...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div id="progress-tracker" class="screen">
+            <h2 class="section-title">📈 Progress Tracker</h2>
+            
+            <div id="progress-content">
+                <p>Loading progress data...</p>
+            </div>
+
+            <div class="controls" style="margin-top: 30px;">
+                <button class="btn btn-secondary" onclick="showScreen('main-menu')">← Back to Menu</button>
+                <button class="btn btn-danger" onclick="clearAllProgress()">🗑️ Clear All Progress</button>
+            </div>
+        </div>
+
+        <!-- Drug Selection -->
+        <div id="drug-selection" class="screen">
+            <h2 class="section-title">⚙️ Drug Selection</h2>
+            
+            <div style="margin-bottom: 20px;">
+                <button class="btn btn-primary" onclick="selectAllDrugs()">Select All</button>
+                <button class="btn btn-secondary" onclick="deselectAllDrugs()">Deselect All</button>
+                <button class="btn btn-success" onclick="resetDrugSelection()">Reset to Default</button>
+            </div>
+
+            <div class="drug-selection" id="drug-selection-content">
+                <p>Loading drug sections...</p>
+            </div>
+
+            <div class="controls" style="margin-top: 30px;">
+                <button class="btn btn-secondary" onclick="showScreen('main-menu')">← Back to Menu</button>
+                <button class="btn btn-primary" onclick="saveDrugSelection()">💾 Save Selection</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
