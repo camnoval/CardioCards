@@ -112,11 +112,11 @@ body {
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 10px 16px; /* Reduced from 12px 24px */
+    padding: 10px 16px;
     cursor: pointer;
-    font-size: 0.9rem; /* Reduced from 1rem */
+    font-size: 0.9rem;
     transition: all 0.2s ease;
-    margin: 3px; /* Reduced from 5px */
+    margin: 3px;
 }
 
 .btn:hover {
@@ -149,6 +149,7 @@ body {
     gap: 10px;
 }
 
+/* Desktop matching game layout */
 .game-board {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -234,8 +235,8 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     margin: 20px 0;
     overflow: hidden;
-    min-height: 300px; /* Reduced from 400px */
-    max-height: 80vh; /* Prevent cards from being too tall on any screen */
+    min-height: 300px;
+    max-height: 80vh;
     display: flex;
     flex-direction: column;
 }
@@ -243,24 +244,24 @@ body {
 .flashcard-header {
     background: linear-gradient(145deg, #4299e1, #3182ce);
     color: white;
-    padding: 15px 20px; /* Reduced top/bottom padding */
+    padding: 15px 20px;
     text-align: center;
-    flex-shrink: 0; /* Prevent header from shrinking */
+    flex-shrink: 0;
 }
 
 .flashcard-header h2 {
-    font-size: 1.4rem; /* Slightly smaller for mobile */
-    word-break: break-word; /* Handle long drug names */
+    font-size: 1.4rem;
+    word-break: break-word;
 }
 
 .flashcard-content {
-    padding: 20px; /* Reduced from 25px */
+    padding: 20px;
     overflow-y: auto;
-    flex: 1; /* Take up remaining space */
+    flex: 1;
 }
 
 .drug-info-section {
-    margin-bottom: 15px; /* Reduced spacing */
+    margin-bottom: 15px;
     padding-bottom: 12px;
     border-bottom: 1px solid #e2e8f0;
 }
@@ -273,7 +274,7 @@ body {
 .drug-info-label {
     font-weight: bold;
     color: #2d3748;
-    font-size: 1rem; /* Slightly smaller */
+    font-size: 1rem;
     margin-bottom: 6px;
     display: flex;
     align-items: center;
@@ -283,9 +284,9 @@ body {
 
 .drug-info-content {
     color: #4a5568;
-    line-height: 1.5; /* Improved readability */
-    margin-left: 15px; /* Reduced indentation */
-    font-size: 0.95rem; /* Slightly smaller for mobile */
+    line-height: 1.5;
+    margin-left: 15px;
+    font-size: 0.95rem;
 }
 
 .progress-table {
@@ -379,10 +380,9 @@ body {
     align-items: center;
     margin: 20px 0;
     flex-wrap: wrap;
-    gap: 8px; /* Reduced from 10px */
+    gap: 8px;
 }
 
-/* Make button groups more compact */
 .controls > div {
     display: flex;
     gap: 5px;
@@ -396,16 +396,8 @@ body {
     }
     
     .screen {
-        padding: 15px; /* Reduced screen padding on mobile */
+        padding: 15px;
         border-radius: 10px;
-    }
-    
-    .game-board {
-        grid-template-columns: 1fr;
-    }
-    
-    .menu-grid {
-        grid-template-columns: 1fr;
     }
     
     .header h1 {
@@ -420,29 +412,115 @@ body {
     }
     
     .controls > div {
-        order: -1; /* Put navigation buttons on top on mobile */
+        order: -1;
         margin-bottom: 10px;
+    }
+    
+    /* Mobile matching game - side by side layout */
+    .game-board {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin: 10px 0;
+        height: calc(100vh - 180px); /* Fixed height to fit screen */
+    }
+    
+    .card-column {
+        background: #f7fafc;
+        border-radius: 8px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden; /* No scrolling */
+    }
+    
+    .card-column h3 {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+        text-align: center;
+        background: #f7fafc;
+        padding: 4px 0;
+        border-radius: 4px;
+        flex-shrink: 0;
+    }
+    
+    .card {
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 8px 6px;
+        margin: 2px 0;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        word-wrap: break-word;
+        font-size: 0.7rem;
+        line-height: 1.1;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 0;
+        flex: 1; /* Each card takes equal height */
+        max-height: calc((100% - 40px) / 5); /* Space for 5 cards plus header */
+    }
+    
+    .card:hover {
+        border-color: #4299e1;
+    }
+    
+    .card.selected {
+        border-color: #3182ce;
+        background: #ebf8ff;
+        transform: scale(1.05);
+        font-weight: 600;
+        z-index: 2;
+        position: relative;
+    }
+    
+    .card.matched {
+        background: #f0fff4;
+        border-color: #48bb78;
+        cursor: default;
+        opacity: 0.6;
+        transform: scale(0.95);
+    }
+    
+    .card.error {
+        background: #fed7d7;
+        border-color: #f56565;
+        animation: shake 0.3s;
+    }
+    
+    .card:active {
+        transform: scale(0.98);
+    }
+    
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-3px); }
+        75% { transform: translateX(3px); }
     }
     
     /* Mobile flashcard improvements */
     .flashcard {
         margin: 10px 0;
-        min-height: 250px; /* Even smaller on mobile */
-        max-height: 70vh; /* More conservative height on mobile */
+        min-height: 250px;
+        max-height: 70vh;
         border-radius: 10px;
     }
     
     .flashcard-header {
-        padding: 12px 15px; /* Further reduced padding */
+        padding: 12px 15px;
     }
     
     .flashcard-header h2 {
-        font-size: 1.2rem; /* Smaller font on mobile */
+        font-size: 1.2rem;
     }
     
     .flashcard-content {
-        padding: 15px; /* Reduced padding */
-        font-size: 0.9rem; /* Smaller text */
+        padding: 15px;
+        font-size: 0.9rem;
     }
     
     .drug-info-label {
@@ -452,7 +530,7 @@ body {
     
     .drug-info-content {
         font-size: 0.85rem;
-        margin-left: 10px; /* Less indentation on mobile */
+        margin-left: 10px;
         line-height: 1.4;
     }
     
@@ -466,14 +544,38 @@ body {
     }
     
     .btn {
-        padding: 10px 16px; /* Smaller buttons on mobile */
+        padding: 10px 16px;
         font-size: 0.9rem;
         margin: 3px;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
     }
 }
 
 /* Extra small screens */
 @media (max-width: 480px) {
+    .game-board {
+        height: calc(100vh - 160px);
+        gap: 6px;
+    }
+    
+    .card-column {
+        padding: 6px;
+    }
+    
+    .card-column h3 {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+    }
+    
+    .card {
+        font-size: 0.65rem;
+        padding: 6px 4px;
+        margin: 1px 0;
+    }
+    
     .flashcard {
         max-height: 65vh;
         min-height: 200px;
@@ -513,5 +615,22 @@ body {
     .answer-input {
         font-size: 1rem;
         padding: 12px;
+    }
+}
+
+/* Landscape mobile orientation for matching game */
+@media (max-width: 768px) and (orientation: landscape) {
+    .game-board {
+        height: calc(100vh - 140px);
+    }
+    
+    .card {
+        font-size: 0.65rem;
+        padding: 4px;
+    }
+    
+    .card-column h3 {
+        font-size: 0.8rem;
+        margin-bottom: 4px;
     }
 }

@@ -481,7 +481,6 @@ function showFlashcard() {
         ['🏷️ Generic Name', drug['Generic Name']],
         ['🏪 Brand Name(s)', drug['Brand Name(s)']],
         ['🧪 Drug Class', drug['Drug Class']],
-        ['💊 Dosage Forms', drug['Dosage Forms']],
         ['🎯 Indication', drug['Indication']],
         ['⚠️ Side Effects', drug['Side Effects']],
         ['💡 Clinical Pearls', drug['Clinical Pearls']]
