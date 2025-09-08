@@ -93,3 +93,19 @@ Aprocitentan,Tryvio,Endothelin receptor antagonist,Hypertension,"Edema, anemia, 
 Ambrisentan,Letairis,Endothelin receptor antagonist,Pulmonary arterial HTN,"Edema, anemia, hepatotoxicity, teratogenicity",
 Bosentan,Tracleer,Endothelin receptor antagonist,Pulmonary arterial HTN,"Edema, anemia, hepatotoxicity, teratogenicity",**Dual ETA/ETB**
 Macitentan,Opsumit,Endothelin receptor antagonist,Pulmonary arterial HTN,"Edema, anemia, hepatotoxicity, teratogenicity",**Long-acting**
+
+# CARDIOVASCULAR - ANTICOAGULANTS & ANTIPLATELETS						
+Generic Name,Brand Name(s),Drug Class,Indication,Side Effects,Clinical Pearls
+Aspirin,Not specified,Cyclooxygenase inhibitor (antiplatelet),CAD/PAD secondary prevention; ACS; PCI; acute ischemic stroke,Bleeding; rash; GI events,Irreversible COX-1 inhibition; 75-150mg most effective dose range; avoid >325mg daily
+Clopidogrel,Plavix,Thienopyridine P2Y12 inhibitor,ACS and PCI (with ASA); alternative to ASA,Bleeding; rash; GI events,Prodrug requiring CYP2C19 metabolism; 300-600mg loading dose then 75mg daily; significant drug interactions with PPIs; prodrug
+Prasugrel,Effient,Thienopyridine P2Y12 inhibitor,ACS and PCI (with ASA),Bleeding,60mg loading dose then 10mg daily (5mg if <60kg); contraindicated with h/o stroke/TIA; age ≥75 increased bleeding risk; prodrug
+Ticagrelor,Brilinta,Non-thienopyridine P2Y12 inhibitor,ACS; history of MI; acute ischemic stroke; high-risk CAD,Bleeding; dyspnea; bradycardia,Reversible P2Y12 inhibition; 180mg loading then 90mg BID x1 year; requires low-dose ASA; CYP3A interactions; NOT a prodrug
+Cilostazol,Pletal,PDE-3 inhibitor,Peripheral arterial disease,Headache; diarrhea; palpitations,Avoid in heart failure; 100mg BID; increases cAMP
+Dipyridamole,Persantine,PDE-3 inhibitor,Prosthetic heart valves,Headache; GI events; dizziness; weakness; flushing,75-100mg QID for prosthetic valves; increases cAMP
+Dipyridamole/Aspirin,Aggrenox,PDE-3 inhibitor + COX inhibitor,Stroke prevention,Headache; GI events; dizziness; weakness; flushing,200mg dipyridamole + 25mg ASA BID; combination product
+Vorapaxar,Zontivity,PAR-1 antagonist,History of MI or PAD (with ASA/clopidogrel),Bleeding,2.08mg daily; long half-life (8 days); contraindicated with h/o stroke/TIA/ICH; CYP3A interactions
+Warfarin,Coumadin,Vitamin K antagonist,DVT/PE treatment; stroke prevention; mechanical heart valves; atrial fibrillation,Bleeding; skin necrosis; purple toe,INR monitoring required; target INR 2-3 (most indications) or 2.5-3.5 (mechanical mitral valves); many drug/food interactions
+Dabigatran,Pradaxa,Direct thrombin inhibitor,Atrial fibrillation; DVT/PE,Bleeding,Direct thrombin inhibition; no routine monitoring required; renal dosing adjustments needed
+Rivaroxaban,Xarelto,Factor Xa inhibitor,Atrial fibrillation; DVT/PE; ACS,Bleeding,Selective Factor Xa inhibition; no routine monitoring required; take with food for absorption
+Apixaban,Eliquis,Factor Xa inhibitor,Atrial fibrillation; DVT/PE,Bleeding,Selective Factor Xa inhibition; no routine monitoring required; lower bleeding risk than other DOACs
+Edoxaban,Savaysa,Factor Xa inhibitor,Atrial fibrillation; DVT/PE,Bleeding,Selective Factor Xa inhibition; no routine monitoring required; once daily dosing
